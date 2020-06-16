@@ -1,0 +1,74 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '../../node_modules/open-iconic/font/css/open-iconic-bootstrap.scss';
+
+.actions {
+    width: 1px;
+    white-space: nowrap;
+}
+
+.sponsors {
+    margin-left: -10px;
+    margin-right: -10px;
+    img {
+        max-height: 150px;
+        margin: 0 10px;
+    }
+}
+
+.datetimepicker[readonly] {
+    background-color: white;
+}
+
+.tournament {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f7f7f7;
+
+    &-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    }
+
+    &-phase {
+        display: flex;
+        justify-content: center;
+        width: 180px;
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3)
+    }
+
+    &-competitor {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+
+        & + .tournament-competitor {
+            border-left: 1px solid #000;
+        }
+    }
+
+    &-results {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 2px;
+        line-height: 0.8;
+    }
+}
